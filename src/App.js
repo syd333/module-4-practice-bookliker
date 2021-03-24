@@ -57,7 +57,6 @@ class App extends React.Component {
       const currentLikes = this.state.selectedBook.users.map(user=> user.id)
         if (!currentLikes.includes(currUser.id)){
           updatedUsers = [...this.state.selectedBook.users, currUser]
-          console.log(updatedUsers)
        } else {
         updatedUsers = this.state.selectedBook.users.filter( user => user.id !== currUser.id)
       }
